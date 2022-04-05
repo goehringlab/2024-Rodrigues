@@ -3,11 +3,11 @@ from scipy.optimize import differential_evolution
 from joblib import Parallel, delayed
 import multiprocessing
 import os
-from .funcs import straighten, rolling_ave_2d, interp_roi, interp_1d_array, interp_2d_array, rotate_roi, save_img, \
-    offset_coordinates, error_func, gaus, spline_roi
+from .funcs import straighten, rolling_ave_2d, interp_1d_array, interp_2d_array, rotate_roi, save_img, error_func, gaus
+from .roi import interp_roi, offset_coordinates, spline_roi
 
 
-class ImageQuant2:
+class ImageQuant:
     """
     Quantification works by taking cross sections across the membrane, and fitting the resulting profile as the sum of
     a cytoplasmic signal component and a membrane signal component
