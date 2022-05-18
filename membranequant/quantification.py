@@ -14,12 +14,10 @@ class ImageQuant:
 
     Input data:
     img                image
-
-    ROI:
-    roi                coordinates defining cortex. Can use output from def_roi function
+    roi                coordinates defining cortex
 
     Fitting parameters:
-    sigma              gaussian/error function width set by sigma
+    sigma              gaussian/error function width
     freedom            amount of freedom allowed in ROI (0=min, 1=max, max offset is +- 0.5 * freedom * thickness)
     periodic           True if coordinates form a closed loop
     thickness          thickness of cross section over which to perform quantification
@@ -27,7 +25,7 @@ class ImageQuant:
     rol_ave            width of rolling average
     rotate             if True, will automatically rotate ROI so that the first/last points are at the end of the long
                        axis
-    zerocap            if True, prevents negative membane and cytoplasm values
+    zerocap            if True, prevents negative membrane and cytoplasm values
     nfits              performs this many fits at regular intervals around ROI
     iterations         if >1, adjusts ROI and re-fits
     interp             interpolation type (linear or cubic)
@@ -44,9 +42,9 @@ class ImageQuant:
 
     def __init__(self, img, sigma=None, roi=None, freedom=0.5,
                  periodic=True, thickness=50, itp=10, rol_ave=10, parallel=False, cores=None, rotate=False,
-                 zerocap=True, nfits=None, iterations=1, interp='cubic', save_path=None, bg_subtract=False):
+                 zerocap=True, nfits=None, iterations=2, interp='cubic', save_path=None, bg_subtract=False):
 
-        # Image / stack
+        # Image / stackm
         self.img = img
 
         # ROI
@@ -288,10 +286,10 @@ class ImageQuant:
         np.savetxt(self.save_path + '/roi.txt', self.roi, fmt='%.4f', delimiter='\t')
         save_img(self.img, self.save_path + '/img.tif')
         save_img(self.straight, self.save_path + '/straight.tif')
-        save_img(self.straight_filtered, self.save_path + '/straight_filtered.tif')
+        # save_img(self.straight_filtered, self.save_path + '/straight_filtered.tif')
         save_img(self.straight_fit, self.save_path + '/straight_fit.tif')
-        save_img(self.straight_mem, self.save_path + '/straight_mem.tif')
-        save_img(self.straight_cyt, self.save_path + '/straight_cyt.tif')
-        save_img(self.straight_resids, self.save_path + '/straight_resids.tif')
-        save_img(self.straight_resids_pos, self.save_path + '/straight_resids_pos.tif')
-        save_img(self.straight_resids_neg, self.save_path + '/straight_resids_neg.tif')
+        # save_img(self.straight_mem, self.save_path + '/straight_mem.tif')
+        # save_img(self.straight_cyt, self.save_path + '/straight_cyt.tif')
+        # save_img(self.straight_resids, self.save_path + '/straight_resids.tif')
+        # save_img(self.straight_resids_pos, self.save_path + '/straight_resids_pos.tif')
+        # save_img(self.straight_resids_neg, self.save_path + '/straight_resids_neg.tif')
