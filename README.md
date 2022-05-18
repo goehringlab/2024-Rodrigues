@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Robustness_paper/HEAD?filepath=%2Fnotebooks%2FINDEX.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Robustness_paper/HEAD?filepath=%2FINDEX.ipynb)
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 # Analysis notebooks for robustness paper
