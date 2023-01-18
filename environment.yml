@@ -1,4 +1,4 @@
-name: advection_paper
+name: robustness_paper
 channels:
   - conda-forge
   - defaults
