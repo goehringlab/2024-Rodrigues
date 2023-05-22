@@ -7,8 +7,28 @@ Analysis code for Rodrigues et al., 2023, with example datasets.
 
 ## Instructions
 
-To launch the interactive notebooks with binder, click the 'launch binder' button above.
+To run the notebooks interactively you have two options:
 
+#### Option 1: Cloud
+
+To run in the cloud, click the 'launch binder' button at the top. Please note that it may take several minutes to open the notebook
+
+#### Option 2: Local
+
+Step 1: Open [Docker](https://www.docker.com/products/docker-desktop/) and pull the docker image (copy and paste into the terminal)
+
+    docker pull tsmbland/rodrigues-et-al
+
+Step 2: Run the docker container (copy and paste into the terminal)
+
+    docker run -p 8888:8888 tsmbland/rodrigues-et-al
+
+This will print a URL for you to copy and paste into your web browser to open up Jupyter
+
+Step 3: When finished, delete the container and image
+    
+    docker container prune -f
+    docker image rm tsmbland/rodrigues-et-al
 ## Citation
 
 ## License
