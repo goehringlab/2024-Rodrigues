@@ -1,7 +1,8 @@
 # Rodrigues et al., 2023
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Rodrigues-et-al/HEAD?filepath=%2Fscripts/INDEX.ipynb)
 [![CC BY 4.0][cc-by-shield]][cc-by]
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Rodrigues-et-al/HEAD?filepath=%2Fscripts/INDEX.ipynb)
+[![run with docker](https://img.shields.io/badge/run%20with-docker-0db7ed?logo=docker)](https://www.docker.com/)
 
 Analysis code for Rodrigues et al., 2023, with example datasets.
 
@@ -9,26 +10,28 @@ Analysis code for Rodrigues et al., 2023, with example datasets.
 
 To run the notebooks interactively you have two options:
 
-#### Option 1: Cloud
+#### Option 1: Binder
 
-To run in the cloud, click the 'launch binder' button at the top. Please note that it may take several minutes to open the notebook
+To run in the cloud, click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Rodrigues-et-al/HEAD?filepath=%2Fscripts/INDEX.ipynb)
 
-#### Option 2: Local
+(Please note that it may take several minutes to open the notebook)
 
-Step 1: Open [Docker](https://www.docker.com/products/docker-desktop/) and pull the docker image (copy and paste into the terminal)
+#### Option 2: Docker
 
-    docker pull tsmbland/rodrigues-et-al
+Step 1: Make sure [Docker](https://www.docker.com/products/docker-desktop/) is installed and open on your machine 
 
-Step 2: Run the docker container (copy and paste into the terminal)
+Step 2: Download and run the Docker container: 
 
-    docker run -p 8888:8888 tsmbland/rodrigues-et-al
+    docker run --rm -p 8888:8888 tsmbland/rodrigues-et-al
 
-This will print a URL for you to copy and paste into your web browser to open up Jupyter
+Once the Docker image has finished downloading, this will print two URLs at the bottom for you to copy and paste into your web browser to open up Jupyter (please try both)
 
-Step 3: When finished, delete the container and image
-    
-    docker container prune -f
+Step 3: Navigate to _scripts/INDEX.ipynb_ to run the notebooks
+
+Step 4: When finished, delete the image:
+
     docker image rm tsmbland/rodrigues-et-al
+
 ## Citation
 
 ## License
