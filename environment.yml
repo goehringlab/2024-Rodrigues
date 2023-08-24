@@ -17,3 +17,5 @@ dependencies:
   - joblib=0.17.0
   - pip:
       - opencv-python==4.2.0.34
+      - par-segmentation==0.1.9
+      - matplotlib-polyroi==
