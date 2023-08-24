@@ -18,4 +18,4 @@ dependencies:
   - pip:
       - opencv-python==4.2.0.34
       - par-segmentation==0.1.9
-      - matplotlib-polyroi==
+      - matplotlib-polyroi==0.1.6
