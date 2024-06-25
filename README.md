@@ -20,23 +20,19 @@ To run the notebooks interactively you have two options:
 
 ### Option 1: Local
 
-Step 1: Open the terminal on your machine
+If you're using [conda]((https://conda.io/projects/conda/en/latest/user-guide/getting-started.html)), just download the code, navigate to the code folder in your terminal, and run the following:
 
-Step 2: Download/clone the repo and navigate to the folder in your terminal
+    conda env create -f environment.yml
+    conda activate robustness-paper
+    jupyter notebook scripts/INDEX.ipynb
 
-Step 3: Make sure you're running Python 3.11 or later (`python --version`). If you have an earlier version, look into [conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) or [pyenv](https://github.com/pyenv/pyenv) for ways to manage multiple python versions on one machine.
-
-Step 4: Create a virtual environment (`python -m venv .venv`) and activate it (`source .venv/bin/activate`, or `.venv/scripts/Activate.ps1` on Windows). You can also use a conda environment if you're more familiar with this.
-
-Step 5: Install the requirements: `pip install -r requirements.txt`
-
-Step 6: Open Jupyter: `jupyter notebook scripts/INDEX.ipynb`
-
+Alternatively, you could create a [virtual environment](https://docs.python.org/3/library/venv.html) (with Python 3.11.6) and install the requirements using pip (`pip install -r requirements.txt`).
+    
 ### Option 2: Cloud
 
-To run in the cloud, click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Rodrigues-et-al/HEAD?filepath=%2Fscripts/INDEX.ipynb)
+To run in the cloud using Binder, click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tsmbland/Rodrigues-et-al/HEAD?filepath=%2Fscripts/INDEX.ipynb)
 
-(Please note that it may take several minutes to open the notebook, and it will sometimes fail to launch for unknown reasons)
+(Please note that it may take several minutes to open the notebook, and it will often fail to launch due to issues with the Binder server)
 
 ## Citation
 

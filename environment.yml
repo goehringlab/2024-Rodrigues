@@ -1,6 +1,6 @@
 name: robustness-paper
 dependencies:
-  - python>=3.11
+  - python=3.11.6
   - pip
   - pip:
     - -r requirements.txt
