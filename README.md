@@ -24,7 +24,7 @@ Step 1: Open the terminal on your machine
 
 Step 2: Download/clone the repo and navigate to the folder in your terminal
 
-Step 3: Make sure you're running Python 3.11 or later (`python --version`). If you have an earlier version, look into [conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) and [pyenv](https://github.com/pyenv/pyenv) for ways to manage multiple python versions on one machine.
+Step 3: Make sure you're running Python 3.11 or later (`python --version`). If you have an earlier version, look into [conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html) or [pyenv](https://github.com/pyenv/pyenv) for ways to manage multiple python versions on one machine.
 
 Step 4: Create a virtual environment (`python -m venv .venv`) and activate it (`source .venv/bin/activate`, or `.venv/scripts/Activate.ps1` on Windows). You can also use a conda environment if you're more familiar with this.
 

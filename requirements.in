@@ -3,12 +3,8 @@ matplotlib
 pandas
 scipy
 ipywidgets
-scikit-learn
-scikit-image
 jupyter
 seaborn
 statsmodels
-joblib
-opencv-python
 par-segmentation==0.1.14
 matplotlib-polyroi==0.1.7
