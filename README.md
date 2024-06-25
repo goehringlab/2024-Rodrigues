@@ -20,7 +20,7 @@ To run the notebooks interactively you have two options:
 
 ### Option 1: Local
 
-If you're using [conda]((https://conda.io/projects/conda/en/latest/user-guide/getting-started.html)), just download the code, navigate to the code folder in your terminal, and run the following:
+If you're using [conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html), just download the code, navigate to the code folder in your terminal, and run the following:
 
     conda env create -f environment.yml
     conda activate robustness-paper
