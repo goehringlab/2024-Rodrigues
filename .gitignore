@@ -2,3 +2,5 @@
 Quantification/
 __pycache__
 .DS_Store
+scripts/exploratory/
+.venv/
