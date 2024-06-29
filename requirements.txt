@@ -215,7 +215,7 @@ notebook-shim==0.2.4
     # via
     #   jupyterlab
     #   notebook
-numpy==2.0.0
+numpy==1.26.4
     # via
     #   -r requirements.in
     #   contourpy
@@ -235,7 +235,7 @@ numpy==2.0.0
     #   tifffile
 opencv-python==4.10.0.84
     # via par-segmentation
-opencv-python-headless==4.10.0.84
+opencv-python-headless==4.8.1.78
     # via -r requirements.in
 overrides==7.7.0
     # via jupyter-server
