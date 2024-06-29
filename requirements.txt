@@ -223,8 +223,6 @@ numpy==1.26.4
     #   ipympl
     #   matplotlib
     #   matplotlib-polyroi
-    #   opencv-python
-    #   opencv-python-headless
     #   pandas
     #   par-segmentation
     #   patsy
@@ -233,10 +231,6 @@ numpy==1.26.4
     #   seaborn
     #   statsmodels
     #   tifffile
-opencv-python==4.10.0.84
-    # via par-segmentation
-opencv-python-headless==4.8.1.78
-    # via -r requirements.in
 overrides==7.7.0
     # via jupyter-server
 packaging==24.1
@@ -260,7 +254,7 @@ pandas==2.2.2
     #   statsmodels
 pandocfilters==1.5.1
     # via nbconvert
-par-segmentation==0.1.14
+par-segmentation==0.1.15
     # via -r requirements.in
 parso==0.8.4
     # via jedi

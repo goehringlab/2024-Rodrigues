@@ -6,6 +6,5 @@ ipywidgets
 jupyter
 seaborn
 statsmodels
-par-segmentation==0.1.14
+par-segmentation==0.1.15
 matplotlib-polyroi==0.1.7
-opencv-python-headless==4.8.1.78  # only needed for binder
