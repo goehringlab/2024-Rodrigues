@@ -8,11 +8,11 @@ Analysis code for Rodrigues et al., 2024, with example datasets.
 Contains the following notebooks outlining some of the analysis methods in the paper:
 
 - [LOWESS](scripts/LOWESS.ipynb) 
-Code for performing LOWESS scatterplot smoothing on dosage vs phenotype data (Figure 3)
+Code for performing LOWESS scatterplot smoothing on dosage vs phenotype data (Figures 3 and 7)
 - [Variance](scripts/Variance.ipynb)
 Code for performing local variance estimation on dosage vs phenotype data (Figure 3)
 - [Membrane quantification](scripts/Membrane_quantification.ipynb) 
-Code for extracting membrane concentrations from midplane confocal images of embryos (Figure 4)
+Code for extracting membrane concentrations from midplane confocal images of embryos (Figures 4 and 5)
 
 ## Instructions
 
