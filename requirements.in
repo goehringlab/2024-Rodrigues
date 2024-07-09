@@ -6,5 +6,5 @@ ipywidgets
 jupyter
 seaborn
 statsmodels
-par-segmentation==0.1.15
+par-segmentation==0.1.16
 matplotlib-polyroi==0.1.8
